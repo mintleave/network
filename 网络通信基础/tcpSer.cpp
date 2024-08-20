@@ -144,7 +144,7 @@ int main(int argc, char const *argv[])
     //3.启动监听
     //参数1：要启动监听的文件描述符
     //参数2：挂起队列的长度
-    if (listen(sfd, 128) == 128)
+    if (listen(sfd, 128) == -1)
     {
         perror("listen error\n");
         return -1;
